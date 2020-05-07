@@ -19,8 +19,9 @@ body {
 .topnav ul li {
     display: inline-block;
     padding: .9%;
+    margin-top: .5%;
     height: 20%;
-    width: 12%;
+    width: 9.5%;
     text-align: center;
 }
 
@@ -28,7 +29,7 @@ body {
     color: #270202;
     font-weight: bolder;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     vertical-align: center;
     text-align: center;
     border-radius: 20px;
@@ -84,7 +85,8 @@ body {
     text-align: justify  center;
     color: #fafafa;
     z-index: 1;
-    font-size: 40%;
+    line-height: 1.5;
+    font-size: 37%;
     width: auto;
     border-radius: 20px;
     font-family: cambria, 'Roboto';
@@ -125,6 +127,33 @@ body {
     background-size: cover;
 }
 
+#logoimg{
+  width: 90%;
+  height: 90%;
+  margin-left: 15%;
+}
+
+.footer{
+  display: block;
+  margin-top: 6%;
+}
+.menu li{
+  display: inline-block;
+  border-right: solid 1px #000000;
+  padding: .2%;
+  padding-right: 2%;
+  margin-left: 2%;
+
+}
+
+.menu li:last-child{
+  border-right: none;
+}
+
+#rightfooter{
+  float: right;
+  text-shadow: 10px;
+}
 /*#info {
     border-radius: 3px;
     clip-path: polygon(19% 32%, 100% 32%, 100% 75%, 75% 75%, 74% 93%, 50% 75%, 19% 74%);
