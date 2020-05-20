@@ -12,15 +12,63 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <title>VJTI Blog</title>
 </head>
-<body>
-    <div class="container input-group mb-3">
-        <div class="custom-file">
-            <input type="file" class="custom-file-input" id="inputGroupFile02">
-            <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+<body style="background-image: linear-gradient(to left, #eb5757, #000000);">
+    <header>
+        <div class="container">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.664) 0%,rgba(14, 8, 8, 0.301) 100%) !important;">
+              <a class="navbar-brand" href="/" id="navE1">VEERMATA JIJABAI TECHNOLOGICAL INST.</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" style="margin-left: 50px;">
+                  <li class="nav-item" style="margin-inline-start: 10 px;">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active" style="margin-inline: 10px;">
+                    <a class="nav-link" href="blog.html">VJTI Blog</a>
+                  </li>
+                  <li class="nav-item dropdown" style="margin-inline: 10px;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="students.html">Students</a>
+                      <a class="dropdown-item" href="faculties.html">Faculties</a>
+                      <!-- <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a> -->
+                    </div>
+                  </li>
+                  <li class="nav-item" style="margin-inline: 10px;">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
         </div>
-        <div class="input-group-append">
-            <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+    </header>
+    <form class="container jumbotron form-group" form method=post enctype=multipart/form-data style="position: relative; top: 30%;background-color: #e7a7a070;">
+        <h1 class="display-3">Upload a File</h1>
+        <input type=file name=file class="btn btn-primary bg-dark">
+        <input type=submit value=Upload class="btn btn-primary bg-dark">
+      </form>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      {% for message in messages %}
+        <div class="container alert alert-warning alert-dismissible fade show" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>{{ message }}</strong> 
         </div>
-    </div>
+        
+        <script>
+          $(".alert").alert();
+        </script>
+        
+        
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
 </body>
 </html>
