@@ -7,3 +7,7 @@
 >>  1. Aniket Mahajan
 >>  1. Vishal Patil
 >>  1. Purvank Bhiwgade
+
+>### Mentors
+>>  1. Sarakshi Phate
+>>  1. Rasika Chavan
