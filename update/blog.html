@@ -70,5 +70,12 @@
         {% endfor %}
       {% endif %}
     {% endwith %}
+    {%for filename in text%}
+      <div class="container list-group" style="position: absolute; top: 70%; margin-left: 13%;">
+        <a href='{{url_for('download',filename=filename)}}' class="list-group-item list-group-item-action active">
+          {{filename.filename}}
+        </a>
+      </div>
+    {%endfor%}
 </body>
 </html>
