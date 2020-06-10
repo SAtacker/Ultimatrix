@@ -31,8 +31,8 @@ h1, h2, h3, h4, h5, h6 {
 .content-section {
   background: #ffffff;
   padding: 10px 20px;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
+  border: 5px solid  #e38181;
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 

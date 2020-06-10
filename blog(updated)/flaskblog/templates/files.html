@@ -1,0 +1,29 @@
+{% extends "layout.html" %} {% block content %}
+  <form class="container jumbotron form-group" form method=post enctype=multipart/form-data style="position: relative; top: 5%;background-color: #e7a7a070;">
+    <h1 class="display-3">Upload a File</h1>
+    <input type=file name=file class="btn btn-primary bg-dark">
+    <input type=submit value=Upload class="btn btn-primary bg-dark">
+  </form>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+      <div class="container alert alert-warning alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>{{ message }}</strong> 
+      </div>
+      <script>
+        $(".alert").alert();
+      </script>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+  <button type="submit" class="container btn btn-primary bg-dark" style="position: relative; top: 68%; margin-left: 0%;text-decoration: none !important;color: rgb(255, 255, 255) !important;"><a href='{{url_for('main.upload_file')}}'>View / Refresh</a></button>
+  <div class="container list-group" ></div>
+  {%for filename in name %}
+    <a href='{{url_for('main.download',filename=filename)}}' class="container list-group list-group-item list-group-item-action active" id="filelist" style="margin-top: 2px;">
+      {{filename}}
+    </a>
+  {%endfor%}
+{% endblock content %}

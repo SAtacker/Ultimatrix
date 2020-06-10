@@ -3,26 +3,26 @@ html {
 }
 
 body {
-    background-color: #5f788a !important;
+    background-color: #e0ebf3 !important;
     overflow-wrap: break-word !important;
 }
 
 
 .navbar-dark .navbar-brand {
-    color:  #ce9d76 !important; 
+    color:  #f3ede8 !important; 
     font-weight: bold;
 }
 
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-    color: #a72852 !important;
+    color: #f3ede8  !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #a72852 !important;
+    color: #f3ede8  !important;
 }
 
 .btn-outline-success {
-    color: #a72852 !important;
+    color: #f3ede8  !important;
     border-color: #28a745;
 }
 

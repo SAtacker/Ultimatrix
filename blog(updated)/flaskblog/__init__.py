@@ -21,7 +21,9 @@ def create_app(config_class=Config):
     bcrypt.init_app(app)
     login_manager.init_app(app)
     mail.init_app(app)
-
+    # app.config['SECRET_KEY'] = 'cefvnnvjnncewbfewbvbew'
+    # app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+    # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///files.db'
     from flaskblog.users.routes import users
     from flaskblog.posts.routes import posts
     from flaskblog.main.routes import main

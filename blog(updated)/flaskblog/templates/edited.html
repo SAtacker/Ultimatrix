@@ -15,9 +15,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>VJTI-Home</title>
 </head>
-<body>
+<body style="background: #d53369;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cbad6d, #d53369);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cbad6d, #d53369); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ color: rgb(80, 37, 37) !important;">
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top" style="background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.664) 0%,rgba(14, 8, 8, 0.301) 100%) !important; background-color: #5f788a;">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top" style="background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%) !important;z-index: 20000 !important;">
             <a class="navbar-brand" href="/" id="navE1">VEERMATA JIJABAI TECHNOLOGICAL INST.</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,6 +39,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{ url_for('users.account') }}">Students</a>
+                    <a class="dropdown-item" href="/files">Files</a>
                     <a class="dropdown-item" href="#">Faculties</a>
                     <!-- <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Something else here</a> -->
@@ -85,7 +89,7 @@
     </div> -->
     
     <div class="jumbotron">
-        <ul class="navbar-nav mr-auto" style="font-size: medium;">
+        <ul class="navbar-nav mr-auto" style="font-size: medium; ">
             <li> <a class="nav-link" href="#">RTI</a> </li>
             <li> <a class="nav-link" href="#">Location Roadmap</a></li>
             <li> <a class="nav-link" href="#">Contact Us</a></li>
