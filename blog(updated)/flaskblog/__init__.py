@@ -4,7 +4,8 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_mail import Mail
 from flaskblog.config import Config
-
+# from webpush_handler import trigger_push_notification   #
+# from webpush_handler import
 
 db = SQLAlchemy()
 bcrypt = Bcrypt()
@@ -15,7 +16,7 @@ mail = Mail()
 
 
 def create_app(config_class=Config):
-    app = Flask(__name__)
+    app = Flask(__name__, instance_relative_config=True)  #
     app.config.from_object(Config)
     db.init_app(app)
     bcrypt.init_app(app)
@@ -34,3 +35,5 @@ def create_app(config_class=Config):
     app.register_blueprint(errors)
 
     return app
+
+# To-do : inside static put registerserviceworker.js and serviceworker.js

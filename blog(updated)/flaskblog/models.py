@@ -44,3 +44,8 @@ class Post(db.Model):
 
     def __repr__(self):
         return f"Post('{self.title}', '{self.date_posted}')"
+
+
+class PushSubscription(db.Model):
+  id = db.Column(db.Integer, primary_key=True, unique=True)
+  subscription_json = db.Column(db.Text, nullable=False)
