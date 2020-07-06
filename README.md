@@ -1,61 +1,62 @@
 # VJTI Website
 
-### Team name: Ultimatrix
+## Team name : Ultimatrix
 
-## Team members
-* Shreyas Atre - 
+### Team members
+
+* Sheryas Atre shreyasatre16@gmail.com
+* Purvank Bhiwgade bhiwgadepurvank@gmail.com
+* Vishal Patil  vishalrpatil1812000@gmail.com
 * Aniket Mahajan
-* Vishal Patil
-* Purvank Bhiwgade
 
-## Mentors
-* Sarakshi Phate
+### Team mentors
+
 * Rasika Chavan
+* Sarakshi Phate
 
 ## Description
-Add your project description here. Your project description should cover how your website/app works. That way you can convey what your project is without the need for anyone to view the code. A more detailed readme in your project repository is encouraged, which can include build and use instructions etc.
 
-* Use bullet points for any feature descriptions you may want to add
+This is creative, appealing and more user-friendly VJTI College website.
+The homepage of the site contains some information about our college and a beautiful background image. Both teachers and students can login on the website.
+The website also features a blog. Students can create new post on the blog and can also delete their old posts. Profile Picture can also be added to the blog.
+Files can be uploaded and downloaded.
 
-```bash
-    Add appropriate code snippets here (4 spaces indent)
-```
-
-Don't forget to replace the link here with **_your own Github repository_** link.
-
-Along with this, add the link of the drive folder that contains the app APK/Screenshots/Screen Recordings. If you have hosted your project on the web, add that link as well.
-
-* GitHub repo link: [Link to repository](https://github.com/your-repo-link)
-* Drive link: [Drive link here](https://drive.google.com/)
-* Website link: [Website link here](www.google.com)
+* [Github](https://github.com/SAtacker/Ultimatrix)
+* [Viode of the website](https://drive.google.com/file/d/1-ND1cCGO8w1Ph_ukLUPxdRsFst_koe4o/view?usp=sharing)
 
 ## Technology stack
 
-Tools and technologies that you learnt and used in the project.
-
-1. Language-1
-2. Language-2
-3. Framework-1
-4. Framework-2 (Add or remove as required)
+1. HTML
+1. Javascript and CSS (front-end)
+1. Bootstrap
+1. Python
+1. Flask (back-end)
+1. MySQL-lite (database)
 
 ## Project Setup
->Include your project setup basics here. Steps for how someone else can setup your project on their machine. Add any relevant details as well.
+
+1. Clone the repository.
+1. Install Flask and requirements.txt on your computer.
+1. Once installed, run 'run.py' file.
+1. Open a web-borwser(preferably Google Chrome).
+1. In the address bar type in the URL of local host and port 5000 i.e. "127.0.0.1:5000".
 
 ## Usage
->Steps to run your project once its setup. If you have an app or website, list how the user can go about using it.
 
-## Applications
->How can your project do its part in solving a real-life problem? What are its possible applications? Decribe here.
+The web-site is user-friendly and easy-to-use.
+The home page contains a ribbon having the following buttons : Home, VJTI Blog, More (Drop down menu), etc.
+You can navigate to blog to post or files to download or upload.
+
+## Application
+
+1. Blog provides a nice student teacher interaction
+1. Files can be easily uploaded and downloaded (16 mb only)
 
 ## Future scope
->Mention ways in which the project can be improved and built upon in the future.
 
-## Screenshots
-Add a few screenshots here to give the viewer a quick idea of what your project looks like. After all, a picture speaks a thousand words.
-
-You'll have to link the screenshots from your drive folder here.
-
-![Screenshot alt text](https://edtimes.in/wp-content/uploads/2018/09/NikeMeme10-640x633.jpg "Here is a screenshot")
-
-Use this template as a guide for writing your documentation. Feel free to customize and adapt it for you project.
-For more Markdown syntax help, visit [here](https://www.markdownguide.org/basic-syntax/)
+* File uploads can be integrated with database.
+* UI can be improved
+* Teachers and students can be flagged separately to prevent anyone from uploading files.
+* A feature can be added of the website which enables teachers to upload quizzes or test (MCQ type) and the students can take these tests (similar to Google Forms) and the result of these tests can be seen by students immediatly.
+* A short video that exhibits ostentatiously shows our college campus can also be featured on the website (Similar to MIT's website which has a special page, "Campus Life", that contains videos of from around the campus)
+* Aftermovies of all the fests can also be added to the website.
