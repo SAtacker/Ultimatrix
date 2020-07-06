@@ -33,6 +33,12 @@ Files can be uploaded and downloaded.
 1. Flask (back-end)
 1. MySQL-lite (database)
 
+## Database
+
+The Database has been created with the help of SQLite. Within the models.db we have created the columns for various data items. That data has then been imported 
+and used for various purposes. The login data includes Email and Password whereas the Post data includes the Title of post along with Post content and Data of posting
+the Post. This data is further used for logging in the user and displaying the posts.
+
 ## Project Setup
 
 1. Clone the repository.
